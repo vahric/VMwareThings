@@ -1,0 +1,12 @@
+To List :
+esxcli vm process list
+
+To Kill :
+esxcli vm process kill -type=xxxx -w=yyyyy
+
+esxcli <conn_options> vm process kill --type <kill_type> --world-id <ID>
+
+-type : 
+The type of kill operation to attempt. There are three types of VM kills that can be attempted: [soft, hard, and force]. Users should always attempt 'soft' kills first, which will give the VMX process a chance to shutdown cleanly (like kill or kill -SIGTERM). If that does not work move to 'hard' kills which will shutdown the process immediately (like kill -9 or kill -SIGKILL). 'force' should be used as a last resort attempt to kill the virtual machine. If all three fail then a reboot is required
+
+

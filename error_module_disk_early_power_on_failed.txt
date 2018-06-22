@@ -1,0 +1,12 @@
+After kill vm process and start VM sometime you can have this issue
+
+"error module disk early power on failed"
+
+Action 1 : 
+
+Remove snapshot and start VM
+Sometime if you are using vCloud Director you should migrate vm to another host to run
+
+
+Action 2 :
+Remove .lck files if you have and try restart again
