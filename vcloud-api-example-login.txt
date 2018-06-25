@@ -1,0 +1,50 @@
+for System
+
+curl -i https://v91.dorukcloud.com/api/sessions -H "Accept: application/*;version=30.0" -H "Authorization: Basic YWRtaW5pc3RyYXRvckBzeXN0ZW06YWRhdmFwdXJ1MzQ=" -X POST
+
+We are making post and try to get token
+-i show the response
+-H for header when make request
+versions are important, pls check it before 
+To see related vcd supported versions --> curl -i https://v91.dorukcloud.com/api/versions
+To encode your username and pass --> echo -n 'administrator@system:password' | base64
+Via Web https://www.base64encode.org
+
+HTTP/1.1 200 OK
+Date: Mon, 25 Jun 2018 13:38:50 GMT
+X-VMWARE-VCLOUD-REQUEST-ID: 6ca39918-24a8-489b-8dce-413478855da2
+X-VMWARE-VCLOUD-ACCESS-TOKEN: eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbmlzdHJhdG9yIiwiaXNzIjoiYTkzYzlkYjktNzQ3MS0zMTkyLThkMDktYThmN2VlZGE4NWY5QDFhODI5MTBmLWQ1YmUtNDdlOS1iYjMwLTg5Y2Y1ZDI3ZWZkOSIsImV4cCI6MTUzMDAyMDMyOSwidmVyc2lvbiI6InZjbG91ZF8xLjAiLCJqdGkiOiJmMjA1Zjg3MDlmYzM0OGExOGQyYjMxZDlhNzMyODYzOSJ9.dJLkIaPd5sHywHcb6aMCy8Qx7eSM9MTXL4lNZQq8kBMil-r5O6IgBQSiLFsPKtROQfJqC1aOxn6pSCyTxj-2gdXlPsweUru91RCVDHvRDzNtdWZ4EGKY9t02EKZRQgpGWcwvsiobHxVpqkO_o1WWeB-BlFq1pU-pgFJ1XAjbXlvPKgULQptY49CnLRYFRdt1IYA0SZkHjxaGY4auRdpZofzRejh4ztEnNpU2NtUF2HZbDrjRy6lsQvDOIeuPFP6J22vvLu8ScwP-rW6AqsV-pr7PsaTnJCklDDo8OrLrFuexsZ7hCFPgikt6jKKCGSyJVDlPLvu3VGBf01G4kUzQ1Q
+X-VMWARE-VCLOUD-TOKEN-TYPE: Bearer
+x-vcloud-authorization: f205f8709fc348a18d2b31d9a7328639
+Content-Type: application/vnd.vmware.vcloud.session+xml;version=30.0
+X-VMWARE-VCLOUD-REQUEST-EXECUTION-TIME: 154
+Content-Length: 2589
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Session xmlns="http://www.vmware.com/vcloud/v1.5" xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vssd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_VirtualSystemSettingData" xmlns:common="http://schemas.dmtf.org/wbem/wscim/1/common" xmlns:rasd="http://schemas.dmtf.org/wbem/wscim/1/cim-schema/2/CIM_ResourceAllocationSettingData" xmlns:vmw="http://www.vmware.com/schema/ovf" xmlns:ovfenv="http://schemas.dmtf.org/ovf/environment/1" xmlns:vmext="http://www.vmware.com/vcloud/extension/v1.5" xmlns:ns9="http://www.vmware.com/vcloud/versions" locationId="a93c9db9-7471-3192-8d09-a8f7eeda85f9@1a82910f-d5be-47e9-bb30-89cf5d27efd9" org="System" roles="System Administrator" user="administrator" userId="urn:vcloud:user:12928211-530d-4600-ad7a-944dacb57efb" href="https://v91.dorukcloud.com/api/session" type="application/vnd.vmware.vcloud.session+xml">
+    <Link rel="down" href="https://v91.dorukcloud.com/api/org/" type="application/vnd.vmware.vcloud.orgList+xml"/>
+    <Link rel="remove" href="https://v91.dorukcloud.com/api/session"/>
+    <Link rel="down" href="https://v91.dorukcloud.com/api/admin/" type="application/vnd.vmware.admin.vcloud+xml"/>
+    <Link rel="down" href="https://v91.dorukcloud.com/api/admin/extension" type="application/vnd.vmware.admin.vmwExtension+xml"/>
+    <Link rel="down" href="https://v91.dorukcloud.com/api/org/a93c9db9-7471-3192-8d09-a8f7eeda85f9" name="System" type="application/vnd.vmware.vcloud.org+xml"/>
+    <Link rel="down" href="https://v91.dorukcloud.com/api/query" type="application/vnd.vmware.vcloud.query.queryList+xml"/>
+    <Link rel="entityResolver" href="https://v91.dorukcloud.com/api/entity/" type="application/vnd.vmware.vcloud.entity+xml"/>
+    <Link rel="down:extensibility" href="https://v91.dorukcloud.com/api/extensibility" type="application/vnd.vmware.vcloud.apiextensibility+xml"/>
+    <Link rel="nsx" href="https://v91.dorukcloud.com/network" type="application/xml"/>
+    <Link rel="openapi" href="https://v91.dorukcloud.com/cloudapi" type="application/json"/>
+    <AuthorizedLocations>
+        <Location>
+            <LocationId>a93c9db9-7471-3192-8d09-a8f7eeda85f9@1a82910f-d5be-47e9-bb30-89cf5d27efd9</LocationId>
+            <SiteName>v91.dorukcloud.com</SiteName>
+            <OrgName>System</OrgName>
+            <RestApiEndpoint>https://v91.dorukcloud.com</RestApiEndpoint>
+            <UIEndpoint>https://v91.dorukcloud.com/tenant</UIEndpoint>
+            <AuthContext>System</AuthContext>
+        </Location>
+    </AuthorizedLocations>
+</Session>
+
+
+for Org
+
+encode username and password with @org,thats it 
