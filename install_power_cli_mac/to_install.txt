@@ -1,0 +1,25 @@
+Download powershell for mac (stable one)
+https://github.com/PowerShell/PowerShell
+
+Install dmg file like before 
+
+Execute pwsh
+
+Vahrics-MacBook-Pro:~ vahricmuhtaryan$ pwsh 
+PowerShell v6.0.2
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+https://aka.ms/pscore6-docs
+Type 'help' to get help.
+
+PS /Users/vahricmuhtaryan>
+
+Ignore SSL Certificate Issues
+
+Set-PowerCLIConfiguration -Confirm:$false -InvalidCertificateAction Ignore -DefaultVIServerMode Single
+
+Connect vCenter and get VMs
+
+Connect-VIServer -Server xxx.yyy.ttt.zzz
+
+Get-vm
