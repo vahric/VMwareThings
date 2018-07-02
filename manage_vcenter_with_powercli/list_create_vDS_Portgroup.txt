@@ -1,0 +1,35 @@
+To get all vDS already set
+
+
+PS /Users/vahricmuhtaryan> Get-VDSwitch                                                                                                                                            
+
+Name                           NumPorts   Mtu        Version  Vendor              
+----                           --------   ---        -------  ------              
+vSAN                           11         1600       6.6.0    VMware, Inc.        
+vTEP                           12         1600       6.6.0    VMware, Inc.        
+vMng                           28         1500       6.6.0    VMware, Inc.  
+
+To get all vDS Portgroup already set
+
+PS /Users/vahricmuhtaryan> Get-VDPortgroup                                                                                                                                         
+
+Name                           NumPorts PortBinding
+----                           -------- -----------
+vSAN-DVUplinks-43              3        Static     
+vSanPg                         8        Static     
+vTEP-DVUplinks-48              4        Static     
+vMng-DVUplinks-56              4        Static     
+vMngPg                         16       Static     
+vxw-vmknicPg-dvs-48-457-408... 8        Static     
+external1                      8        Static 
+
+
+To Create Port Group under vMng vDS 
+
+
+PS /Users/vahricmuhtaryan> New-VDPortgroup -name Test1  -VlanId 4000 -VDSwitch vMng                                                                                                
+                                                                                                                                                                                   Name                           NumPorts PortBinding                                                                                                                                ----                           -------- -----------                                                                                                                                Test1                          128      Static                                                                                                                                                                                                              
+
+To Delete Portgroup
+
+PS /Users/vahricmuhtaryan> Remove-VDPortGroup -VDPortGroup Test1 -Confirm:$false

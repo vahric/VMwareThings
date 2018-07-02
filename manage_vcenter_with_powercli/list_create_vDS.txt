@@ -1,0 +1,11 @@
+To get all vDS
+
+PS /Users/vahricmuhtaryan> Get-VDSwitch                                                                                                                                            
+
+Name                           NumPorts   Mtu        Version  Vendor              
+----                           --------   ---        -------  ------              
+vSAN                           11         1600       6.6.0    VMware, Inc.        
+vTEP                           12         1600       6.6.0    VMware, Inc.        
+vMng                           28         1500       6.6.0    VMware, Inc.  
+
+

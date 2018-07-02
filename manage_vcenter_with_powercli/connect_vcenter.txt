@@ -1,0 +1,11 @@
+Connect vCenter
+
+Connect-VIServer -Server xxx.yyy.ttt.zzz
+
+Example : 
+
+PS /Users/vahricmuhtaryan> Connect-VIServer -Server vist.dorukcloud.com -User administrator@istanbul.site -Password xxxyyyzzz                                                
+
+Name                           Port  User                          
+----                           ----  ----                          
+vist.dorukcloud.com            443   ISTANBUL.SITE\Administrator
