@@ -1,0 +1,14 @@
+
+To List
+
+get-vm
+
+List and filter 
+
+PS /Users/vahricmuhtaryan/VMThings/manage_vcenter_with_powercli> get-vm | ? Name -like *centos*                                                                                   
+
+Name                 PowerState Num CPUs MemoryGB       
+----                 ---------- -------- --------       
+centostest2          PoweredOff 1        2.000          
+centostestz          PoweredOff 1        2.000          
+

@@ -1,0 +1,3 @@
+To Delete VM from inventory and datatore
+
+Remove-VM centostestz -DeletePermanently -Confirm:$false
