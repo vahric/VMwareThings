@@ -1,0 +1,11 @@
+Looks like default CDP
+To activate LLDP
+
+Set-VDSwitch -VDSwitch <swithch_name> -LinkDiscoveryProtocol LLDP -LinkDiscoveryProtocolOperation Listen
+
+To get the list of VDSwitch
+
+Get-VDSwitch
+
+What is lldp http://www.orbit-computer-solutions.com/link-layer-discovery-protocol-lldp/
+What is cdp https://learningnetwork.cisco.com/docs/DOC-26872
