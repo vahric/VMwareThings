@@ -1,0 +1,8 @@
+
+
+Format-List	fl
+Fornat-Wide	fw
+Format-Table	ft
+
+Link: 
+https://docs.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/using-format-commands-to-change-output-view?view=powershell-6

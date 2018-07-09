@@ -1,0 +1,30 @@
+To customize we will need perl, dont forget to install perl
+yum install perl
+
+To clean old kernels after update install yum-utils
+yum install yum-utils
+
+package-cleanup --oldkernels
+Loaded plugins: fastestmirror
+No old kernels to remove
+
+To Clean Yum Cache
+yum clean all
+
+Force Rotate and delete files
+logrotate -f /etc/logrotate.conf
+rm -rf /var/log/anaconda
+rm -f /var/log/dmesg.old
+rm –f /var/log/*-???????? /var/log/*.gz
+cat /dev/null > /var/log/audit/audit.log 
+cat /dev/null > /var/log/wtmp 
+cat /dev/null > /var/log/lastlog 
+cat /dev/null > /var/log/grubby
+rm –rf /tmp/*
+
+Remove SSH Keys
+rm –f /etc/ssh/*key*
+
+Remove History
+rm -f ~root/.bash_history
+unset HISTFILE

@@ -1,0 +1,9 @@
+To get input from customer use Read-Host cmdlet
+
+
+Example : 
+
+$vCenter = Read-Host -Prompt 'Input your vCenter Server IP (no intelligant control enter ip)' 
+
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/read-host?view=powershell-6
+

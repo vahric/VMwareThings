@@ -1,0 +1,11 @@
+To comment out line
+
+# comment
+
+To comment multiple line 
+
+<# 
+
+comment 
+
+#>

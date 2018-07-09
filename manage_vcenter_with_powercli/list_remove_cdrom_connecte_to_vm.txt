@@ -1,0 +1,21 @@
+To List
+
+Get-VM | Get-CDDrive | fl 
+
+IsoPath         : [cilgincocuk] OS/Centos/Cents_7_0_(64_bit)/CentOS-7-x86_64-DVD-1804.iso
+HostDevice      : 
+RemoteDevice    : 
+ParentId        : VirtualMachine-vm-73630
+Parent          : ansible
+Uid             : /VIServer=root@10.110.5.100:443/VirtualMachine=VirtualMachine-vm-73630/CDDrive=3002/
+ConnectionState : Connected, GuestControl, StartConnected
+ExtensionData   : VMware.Vim.VirtualCdrom
+Id              : VirtualMachine-vm-73630/3002
+Name            : CD/DVD drive 1
+
+To List Short with some property
+
+Get-VM | Get-CDDrive | ft  ParentId, IsoPath
+
+To Disconnet CDROM From VM
+

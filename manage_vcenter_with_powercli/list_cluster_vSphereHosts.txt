@@ -1,0 +1,20 @@
+Get-Cluster
+
+
+Example Cluster
+
+PS /Users/vahricmuhtaryan/VMThings/manage_vcenter_with_powercli/powershell_scripts> Get-Cluster                                                                                                      
+
+Name                           HAEnabled  HAFailover DrsEnabled DrsAutomationLevel  
+                                          Level                                     
+----                           ---------  ---------- ---------- ------------------  
+pba_cluster_ist_01             True       1          True       FullyAutomated  
+
+
+Example VMHosts
+
+PS /Users/vahricmuhtaryan/VMThings/manage_vcenter_with_powercli/powershell_scripts> Get-VMHost                                                                                                       
+
+Name                 ConnectionState PowerState NumCpu CpuUsageMhz CpuTotalMhz   MemoryUsageGB   MemoryTotalGB Version
+----                 --------------- ---------- ------ ----------- -----------   -------------   ------------- -------
+10.110.5.14          Connected       PoweredOn  

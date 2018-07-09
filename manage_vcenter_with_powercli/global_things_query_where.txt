@@ -1,0 +1,8 @@
+Eşdeğer
+
+get-vm | ? ID -eq VirtualMachine-vm-73631 
+
+Instead of Where-Object you can use ? 
+
+Link: 
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-6

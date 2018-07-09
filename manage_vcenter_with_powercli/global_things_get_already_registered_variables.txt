@@ -1,0 +1,17 @@
+PS /Users/vahricmuhtaryan/VMThings/manage_vcenter_with_powercli/powershell_scripts> Get-Variable *pass                                                                                               
+
+Name                           Value                                                                                                                                                                
+----                           -----                                                                                                                                                                
+usernamePASS                   System.Management.Automation.PSCredential
+
+
+Link : 
+
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-variable?view=powershell-6
+
+To Remove Registed Variables
+
+Use Remove-Variable with name of variable, its doesn't exist anymore
+
+PS /Users/vahricmuhtaryan/VMThings/manage_vcenter_with_powercli/powershell_scripts> Remove-Variable usernamePASS                                                                                     
+PS /Users/vahricmuhtaryan/VMThings/manage_vcenter_with_powercli/powershell_scripts> Get-Variable *pass 

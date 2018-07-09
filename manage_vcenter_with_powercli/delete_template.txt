@@ -1,0 +1,3 @@
+To delete template
+
+Remove-Template centostest1 -Confirm:$false

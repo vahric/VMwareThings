@@ -9,3 +9,13 @@ PS /Users/vahricmuhtaryan> Connect-VIServer -Server vist.dorukcloud.com -User ad
 Name                           Port  User                          
 ----                           ----  ----                          
 vist.dorukcloud.com            443   ISTANBUL.SITE\Administrator
+
+Example (Expect that you have a credentials)
+
+PS /Users/vahricmuhtaryan/VMThings/manage_vcenter_with_powercli/powershell_scripts> $global:DefaultVIServer                                                                                          
+
+Name                           Port  User                          
+----                           ----  ----                          
+10.110.5.100                   443   root                          
+
+Example (Disconnect from vCenter)
