@@ -1,0 +1,27 @@
+To get datastore
+
+Get-Datastore
+
+To get you will need vmhost name
+Also you will find out MultipathPolicy
+
+Get-ScsiLun -VmHost <hostnameofvsphere>                                                                                                                            
+
+CanonicalN ConsoleDeviceName              LunType         CapacityGB MultipathPolicy 
+ame                                                                                  
+---------- -----------------              -------         ---------- --------------- 
+naa.600... /vmfs/devices/disks/naa.600... disk            10,240.000 RoundRobin      
+naa.600... /vmfs/devices/disks/naa.600... disk            10,240.000 RoundRobin      
+naa.600... /vmfs/devices/disks/naa.600... disk            10,240.000 RoundRobin      
+naa.600... /vmfs/devices/disks/naa.600... disk             2,048.000 RoundRobin      
+naa.600... /vmfs/devices/disks/naa.600... disk            10,240.000 RoundRobin      
+naa.600... /vmfs/devices/disks/naa.600... disk            10,240.000 RoundRobin 
+
+Datastore and Name Together
+
+#Filter is for exclude some datastores
+
+$a = get-datastore | ? { $_.Name -NotLike '*local*' -and $_.Name -NotLike '*cilgin*' -and  $_.Name -NotLike '*gecici*' }
+
+To get the datastore names and canonical names
+foreach ($a1 in $a) {write-host $a1.ExtensionData.info.vmfs.extent.Diskname,$a1.Name}   

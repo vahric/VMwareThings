@@ -24,6 +24,11 @@ vxw-vmknicPg-dvs-48-457-408... 8        Static
 external1                      8        Static 
 
 
+To get with vlan
+
+Get-VDPortgroup | ft Name,VlanConfiguration,VDSwitch
+
+
 To Create Port Group under vMng vDS 
 
 
