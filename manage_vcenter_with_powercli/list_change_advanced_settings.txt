@@ -1,0 +1,12 @@
+
+To get advanced settngs of ESXi Host Settings use new command Get-AdvancedSetting command ...
+
+Get-AdvancedSetting -Entity (Get-VMHost) -name Disk.DiskMaxIOSize
+
+This command get all Disk.DiskMaxIOSize settings from vsphere nodes ..
+
+Not: Entity could be very , like a cluster or different object
+
+To set/change variable on filtered vSphere node; 
+
+Get-AdvancedSetting -Entity (Get-VMHost | ? {$_.Name -like "filter*"}) -name Disk.DiskMaxIOSize | Set-AdvancedSetting -Value '32' -Confirm:$false

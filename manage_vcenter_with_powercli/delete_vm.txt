@@ -1,3 +1,7 @@
 To Delete VM from inventory and datatore
 
 Remove-VM centostestz -DeletePermanently -Confirm:$false
+
+To Delete VM Only From Inventory
+
+Remove-VM "FREEPBX" -Confirm:$false 
