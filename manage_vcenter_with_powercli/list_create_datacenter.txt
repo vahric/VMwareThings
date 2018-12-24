@@ -1,0 +1,36 @@
+To List
+
+PS /Users/vahricmuhtaryan> Get-Datacenter                                                                                                                 
+
+Name                                    
+----                                    
+PatatesMngAndEdge        
+
+
+To Create Datacenter
+
+PS /Users/vahricmuhtaryan> New-Datacenter -Name PatatesCompute -Location Datacenters                                                                      
+
+Name                                    
+----                                    
+PatatesCompute
+
+Not: To get the Folder name use commands below 
+
+PS /Users/vahricmuhtaryan> Get-Folder                                                                                                                     
+
+Name                           Type           
+----                           ----           
+Datacenters                    Datacenter     
+vm                             VM             
+network                        Network        
+host                           HostAndCluster 
+datastore                      Datastore      
+Discovered virtual machine     VM             
+
+
+PS /Users/vahricmuhtaryan> Get-Folder Datacenters                                                                                                         
+
+Name                           Type           
+----                           ----           
+Datacenters                    Datacenter     

@@ -1,0 +1,15 @@
+To List 
+
+PS /Users/vahricmuhtaryan> Get-VMHost                                                                                                                     
+
+Name                 ConnectionState PowerState NumCpu CpuUsageMhz CpuTotalMhz   MemoryUsageGB   MemoryTotalGB Version
+----                 --------------- ---------- ------ ----------- -----------   -------------   ------------- -------
+10.110.30.2          Connected       PoweredOn       6         137       11970           1.474          31.966   6.7.0
+10.110.30.1          Connected       PoweredOn      16         158       31904          13.422          79.966   6.7.0
+
+
+To Add
+
+PS /Users/vahricmuhtaryan> Add-VMHost 10.110.30.2 -Location PatatesMngAndEdge -User root -Password xxyyttee -Force 
+
+Not : Force for skip ssl verification
